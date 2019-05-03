@@ -1,0 +1,22 @@
+var s = "1,2,3,4"
+undefined
+s
+"1,2,3,4"
+s.split(',')
+(4) ["1", "2", "3", "4"]
+var a = s.split(',')
+undefined
+a
+(4) ["1", "2", "3", "4"]
+var b = s.split(',').map(function(item) {return parseInt(item)} )
+undefined
+b
+(4) [1, 2, 3, 4]
+var c = a.map(function(item) {return parseInt(item)} )
+undefined
+c
+(4) [1, 2, 3, 4]
+var d = a.map(function(item) {var i = parseInt(item); return i*i;} )
+undefined
+d
+(4) [1, 4, 9, 16]

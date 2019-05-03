@@ -1,0 +1,10 @@
+var str = '"string" is a string'
+undefined
+str
+""string" is a string"
+var str2 = ""string" is a string"
+VM1794:1 Uncaught SyntaxError: Unexpected identifier
+var str2 = "\"string\" is a string and 'string' is a string"
+undefined
+str2
+""string" is a string and 'string' is a string"

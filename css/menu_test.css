@@ -1,0 +1,90 @@
+div {
+	border: 1px solid black;
+}
+
+.main {
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	transition: 1s;
+	position: relative;
+	display: inline-block;
+}
+
+.main:hover {
+	background-color: blue;
+	transition: .2s;
+}
+
+.internal {
+	display: none;
+	width: 150px;
+	height: 150px;
+	background-color: lightblue;
+	position: absolute;
+	left: 150px;
+	top: 100px;
+	z-index: 2;
+}
+
+.main:hover .internal {
+	display: block;
+}
+
+.main.red {
+	background-color: red;
+}
+
+.main.red:hover {
+	background-color: lightcoral;
+	
+}
+
+.main.red:hover .internal{
+	background-color: green;
+}
+
+/*
+.parMain:before {
+	content: ' ';
+	margin-left: 10px;
+} */
+
+.parMain:first-letter {
+	text-transform: uppercase;
+	margin-left: 10px;
+}
+
+@media print {
+	.internal {
+		display: block;
+	}
+	
+}
+
+@media all and (max-width: 840px) {
+	.main {
+		width: calc(100% - 20px);
+	}
+}
+
+@media screen and (min-width: 841px) and (max-width: 1240px) {
+	
+	.main {
+		width: calc(50% - 10px);
+	}
+}
+
+@media screen and (min-width: 1241px) {
+	.main {
+		width: calc(33% - 10px);
+	}
+}
+
+/*
+
+display: table
+display: table-row
+display: table-cell
+
+*/
